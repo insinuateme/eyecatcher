@@ -41,19 +41,19 @@
         }
 
         .logo-circle {
-            width: 100px;
-            height: 100px;
-            background: #fff;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
+            overflow: hidden;
         }
 
         .logo-circle svg {
-            width: 60px;
-            height: 60px;
+            width: 110px;
+            height: 110px;
         }
 
         .brand-name {
@@ -136,19 +136,34 @@
     <div class="spacer-top"></div>
     <div class="content">
         <div class="logo-circle">
-            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Eyelash left: curves up and to the left -->
-                <path d="M38 34 Q32 18 24 12" stroke="#4A8FE7" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-                <!-- Eyelash center: curves straight up -->
-                <path d="M50 30 Q50 16 50 6" stroke="#4A8FE7" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-                <!-- Eyelash right: curves up and to the right -->
-                <path d="M62 34 Q68 18 76 12" stroke="#4A8FE7" stroke-width="2.8" stroke-linecap="round" fill="none"/>
-                <!-- Eye shape: almond with pointed ends -->
-                <path d="M8 54 C18 34, 34 28, 50 28 C66 28, 82 34, 92 54 C82 72, 66 78, 50 78 C34 78, 18 72, 8 54 Z" stroke="#4A8FE7" stroke-width="2.8" fill="none"/>
-                <!-- Iris -->
-                <circle cx="50" cy="54" r="15" fill="#4A8FE7"/>
-                <!-- Pupil highlight -->
-                <circle cx="50" cy="54" r="5.5" fill="#fff"/>
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Dark circle background -->
+                <circle cx="100" cy="100" r="100" fill="#1C1C2E"/>
+                <!-- Upper brow accent: thin elegant arc -->
+                <path d="M42 82 C60 62, 90 55, 120 58 C140 60, 155 58, 168 52"
+                      stroke="#4A8FE7" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <!-- Upper eyelid: bold sweeping shape with pointed tail -->
+                <path d="M35 102
+                         C45 78, 75 66, 105 70
+                         C130 73, 150 68, 172 58
+                         L170 64
+                         C152 74, 132 80, 108 80
+                         C80 80, 55 90, 42 102 Z"
+                      fill="#4A8FE7"/>
+                <!-- Eye opening / iris: almond shape -->
+                <path d="M42 104
+                         C55 88, 80 82, 108 84
+                         C132 86, 150 90, 160 100
+                         C150 112, 130 118, 105 118
+                         C78 118, 55 116, 42 104 Z"
+                      fill="#4A8FE7"/>
+                <!-- Pupil: dark center -->
+                <ellipse cx="102" cy="101" rx="10" ry="11" fill="#1C1C2E"/>
+                <!-- Lower eyelid: thinner curve -->
+                <path d="M44 108
+                         C58 128, 82 134, 108 130
+                         C130 127, 148 118, 158 106"
+                      stroke="#4A8FE7" stroke-width="3.5" stroke-linecap="round" fill="none"/>
             </svg>
         </div>
         <div class="brand-name">Eyecatcher</div>
