@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#6C63FF">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World</title>
+    <title>Eyecatcher</title>
     <style>
         * {
             margin: 0;
@@ -108,13 +108,13 @@
 </head>
 <body>
     <div class="card">
-        <span class="wave" aria-hidden="true">👋</span>
-        <h1>Hello, World!</h1>
-        <p>Welcome to this mobile web app. Tap the button below to say hello back!</p>
-        <button class="btn" id="helloBtn">Say Hello</button>
+        <span class="wave" aria-hidden="true">👁️</span>
+        <h1>Eyecatcher</h1>
+        <p>Grab attention instantly. Tap the button to see what catches your eye!</p>
+        <button class="btn" id="helloBtn">Catch My Eye</button>
         <div class="counter" id="counter"></div>
     </div>
-    <footer>Built with HTML, CSS & JS</footer>
+    <footer>Eyecatcher — Built with HTML, CSS & JS</footer>
 
     <script>
         const btn = document.getElementById('helloBtn');
@@ -123,14 +123,14 @@
 
         btn.addEventListener('click', () => {
             count++;
-            const greetings = [
-                'Hello! 🌍', 'Hola! 🌎', 'Bonjour! 🌏',
-                'Ciao! 🇮🇹', 'Hallo! 🇩🇪', 'Olá! 🇧🇷',
-                'こんにちは! 🇯🇵', '안녕하세요! 🇰🇷', '你好! 🇨🇳',
-                'Namaste! 🇮🇳', 'Merhaba! 🇹🇷', 'Sawubona! 🇿🇦'
+            const catchphrases = [
+                'Look here! 👀', 'Stunning! ✨', 'Eye-catching! 🎯',
+                'Show-stopper! 🌟', 'Dazzling! 💎', 'Wow factor! 🔥',
+                'Brilliant! 💡', 'Captivating! 🎪', 'Mesmerizing! 🌀',
+                'Spotlight on! 🔦', 'Stand out! 🏆', 'Turn heads! 💫'
             ];
-            const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-            counter.textContent = `${greeting} (tap #${count})`;
+            const phrase = catchphrases[Math.floor(Math.random() * catchphrases.length)];
+            counter.textContent = `${phrase} (tap #${count})`;
         });
     </script>
 </body>
